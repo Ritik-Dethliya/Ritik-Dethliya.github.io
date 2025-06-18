@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/Ritik-Dethliya/Ritik-Dethliya.github.io",
+  "homepage": "https://ritik-dethliya.github.io/",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
     "chart.js": "^4.5.0",
