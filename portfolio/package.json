@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "cd portfolio && npm install && npm run build",
+    "deploy": "gh-pages -d portfolio/dist"
   },
   "homepage": "https://ritik-dethliya.github.io/",
   "dependencies": {
