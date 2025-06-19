@@ -35,24 +35,24 @@ export default function Portfolio() {
   return (
     <div className="font-sans bg-gray-50 text-gray-800">
       {project && <ImageComponent project={project}  setProject={setProject}/>}
-        <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-  <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-    <h1 className="text-xl font-bold">MyPortfolio</h1>
-    <ul className="flex space-x-6 font-medium text-gray-700">
-      <li><a href="#hero" className="hover:text-blue-500">Home</a></li>
-      <li><a href="#about" className="hover:text-blue-500">AboutMe</a></li>
-      <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
-      <li><a href="#skills" className="hover:text-blue-500">Skills</a></li>
-      <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-      {/* Hero Section */}
+      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+          <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 className="text-xl font-bold">MyPortfolio</h1>
+            <ul className="flex space-x-6 font-medium text-gray-700">
+              <li><a href="#hero" className="hover:text-blue-500">Home</a></li>
+              <li><a href="#about" className="hover:text-blue-500">AboutMe</a></li>
+              <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
+              <li><a href="#skills" className="hover:text-blue-500">Skills</a></li>
+              <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
+            </ul>
+          </div>
+      </nav>
+      
       <section id='hero' 
         className="min-h-screen my-15 flex flex-col items-center bg-cover bg-center justify-center text-center bg-white px-6 !background-repeat:no-repeat bg-[url('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?ga=GA1.1.1012260453.1749411147&semt=ais_hybrid&w=740')]"
         >
         <img
-            src={profileImage} // 👈 Put your image file in public folder
+            src={profileImage} 
             alt="Ritik Dethliya"
             className="w-64 h-64 rounded-full object-cover mb-4 border-4 border-gray-300"
         />
@@ -65,7 +65,7 @@ export default function Portfolio() {
         </p>
       </section>
 
-      {/* About Section */}
+     
       <section id='about' className="py-16 px-6 bg-gray-100 text-center">
         <h2 className="text-3xl font-semibold mb-4">About Me</h2>
         <p className="max-w-3xl mx-auto text-gray-600">
@@ -80,7 +80,7 @@ export default function Portfolio() {
         
       </section>
 
-      {/* Projects Section */}<section id='projects' className="py-16 px-6 bg-cover bg-[url('')]">
+      <section id='projects' className="py-16 px-6 bg-cover bg-[url('')]">
       
         <h2 className="text-3xl font-semibold mb-8 text-center">Projects</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -109,11 +109,11 @@ export default function Portfolio() {
           ))}
         </div>
       </section>
-    {/* skils */}
+    
     <section id='skills'>
         <Skills/>
     </section>
-     <section id='anaylsis'>
+    <section id='anaylsis'>
         <MacroPieChart/>
     </section>
       <section id='contact' className="py-16 px-6 bg-gray-100 text-center">
@@ -126,13 +126,13 @@ export default function Portfolio() {
           <a href="https://github.com/Ritik-Dethliya" target="_blank" rel="noreferrer"><Github /></a>
           <a href="https://www.linkedin.com/in/ritik-dethliya-9aa0b6338/" target="_blank" rel="noreferrer"><Linkedin /></a>
         </div>
-      </section>
+    </section>
 
-      {/* Footer */}
-      <footer className="text-center text-sm py-4 bg-white border-t border-gray-200">
-        © 2025 Ritik Dethliya. All rights reserved.
-      </footer>
-    </div>
+      
+    <footer className="text-center text-sm py-4 bg-white border-t border-gray-200">
+      © 2025 Ritik Dethliya. All rights reserved.
+    </footer>
+  </div>
   );
 }
  
