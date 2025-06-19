@@ -46,17 +46,19 @@ export default function Portfolio() {
   </div>
 </nav>
       {/* Hero Section */}
-      <section id='hero' className="min-h-screen flex flex-col items-center justify-center text-center bg-white px-6">
+      <section id='hero' 
+        className="min-h-screen my-15 flex flex-col items-center bg-cover bg-center justify-center text-center bg-white px-6 !background-repeat:no-repeat bg-[url('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?ga=GA1.1.1012260453.1749411147&semt=ais_hybrid&w=740')]"
+        >
         <img
             src={profileImage} // 👈 Put your image file in public folder
             alt="Ritik Dethliya"
-            className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-gray-300"
+            className="w-64 h-64 rounded-full object-cover mb-4 border-4 border-gray-300"
         />
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">Hi, I'm Ritik</h1>
-        <p className="text-xl text-gray-600 mb-2">
+        <h1 className="text-4xl sm:text-7xl font-bold mb-4 text-white">Hi, I'm Ritik</h1>
+        <p className="text-xl text-white mb-2">
           Full-Stack Developer | MERN
         </p>
-        <p className="max-w-xl text-gray-500">
+        <p className="max-w-xl text-white">
           I turn ideas into interactive web experiences using JavaScript, React, Node & MongoDB.
         </p>
       </section>
