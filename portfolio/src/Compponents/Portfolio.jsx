@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { Mail, Github, Linkedin ,Download} from 'lucide-react';
 import Skills from './skills';
 import skillshare from '../assets/skillshare.png'
 import caloricounter from '../assets/Caloricounter.png'
 import profileImage from '../assets/ritikprotfolio.jpg'
 import MacroPieChart from './Chart';
 import ImageComponent from './Image';
+import Resume from '../assets/RitikDethliyaResume.pdf';
 const projects = [
   {
     name: "CaloriSeeker",
@@ -39,6 +40,7 @@ export default function Portfolio() {
     <h1 className="text-xl font-bold">MyPortfolio</h1>
     <ul className="flex space-x-6 font-medium text-gray-700">
       <li><a href="#hero" className="hover:text-blue-500">Home</a></li>
+      <li><a href="#about" className="hover:text-blue-500">AboutMe</a></li>
       <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
       <li><a href="#skills" className="hover:text-blue-500">Skills</a></li>
       <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
@@ -69,10 +71,17 @@ export default function Portfolio() {
         <p className="max-w-3xl mx-auto text-gray-600">
           I'm Ritik Dethliya, currently pursuing a Software Development course. I enjoy solving real-world problems and building tools like CaloriSeeker to help people make better health choices. Whether it's crafting smooth UI or building secure APIs — I'm all in!
         </p>
+        <div className='my-5'>
+          <a href={Resume} download className="bg-gradient-to-r  from-blue-500 to-indigo-600 text-white  px-6 py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold"
+          >
+           Resume <Download className='inline'/>
+        </a>
+        </div>
+        
       </section>
 
-      {/* Projects Section */}
-      <section id='projects' className="py-16 px-6">
+      {/* Projects Section */}<section id='projects' className="py-16 px-6 bg-cover bg-[url('')]">
+      
         <h2 className="text-3xl font-semibold mb-8 text-center">Projects</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((proj, idx) => (
