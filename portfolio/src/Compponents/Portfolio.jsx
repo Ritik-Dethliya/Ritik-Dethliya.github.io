@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Mail, Github, Linkedin ,Download} from 'lucide-react';
+import { Mail, Github, Linkedin ,Download, Instagram, PhoneCall} from 'lucide-react';
 import Skills from './skills';
 import skillshare from '../assets/skillshare.png'
 import caloricounter from '../assets/Caloricounter.png'
 import profileImage from '../assets/ritikprotfolio.jpg'
-import MacroPieChart from './Chart';
 import ImageComponent from './Image';
 import Resume from '../assets/RitikDethliyaResume.pdf';
+import GitHubStats from './GitHubStat';
 const projects = [
   {
     name: "CaloriSeeker",
@@ -113,19 +113,23 @@ export default function Portfolio() {
     <section id='skills'>
         <Skills/>
     </section>
-    <section id='anaylsis'>
-        <MacroPieChart/>
+    <section id='github-calander' className='p-2'>
+        <GitHubStats/>
     </section>
-      <section id='contact' className="py-16 px-6 bg-gray-100 text-center">
-        <h2 className="text-3xl font-semibold mb-4">Let's Connect</h2>
-        <p className="mb-6 text-gray-600">
-          Wanna collaborate or just say hi? I’m always open to talk!
-        </p>
-        <div className="flex justify-center gap-6 text-blue-600 text-lg">
-          <a href="mailto:dethliya73@example.com"><Mail /></a>
-          <a href="https://github.com/Ritik-Dethliya" target="_blank" rel="noreferrer"><Github /></a>
-          <a href="https://www.linkedin.com/in/ritik-dethliya-9aa0b6338/" target="_blank" rel="noreferrer"><Linkedin /></a>
-        </div>
+
+    <section id='contact' className="py-16 px-6 bg-gray-100 text-center">
+      <h2 className="text-3xl font-semibold mb-4">Let's Connect</h2>
+      <p className="mb-6 text-gray-600">
+        Wanna collaborate or just say hi? I’m always open to talk!
+      </p>
+
+      <div className="flex justify-center gap-6 text-blue-600 text-lg">
+        <a href="mailto:dethliya73@example.com" className='shadow-md p-2'><Mail /></a>
+        <a href="https://github.com/Ritik-Dethliya" className='shadow-md p-2' target="_blank" rel="noreferrer"><Github /></a>
+        <a href="https://www.linkedin.com/in/ritik-dethliya-9aa0b6338/" className='shadow-md p-2' target="_blank" rel="noreferrer"><Linkedin /></a>
+        <a href="https://www.instagram.com/__ritik_d" className='shadow-md p-2' target="_blank" rel="noreferrer"><Instagram /></a>
+        <a href="https://wa.me/7869882466" className='shadow-md p-2' target="_blank" rel="noreferrer"><PhoneCall /></a>
+      </div>
     </section>
 
       
