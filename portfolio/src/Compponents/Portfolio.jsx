@@ -37,7 +37,7 @@ const projects = [
   },
   {
     name: "Cross-Generation SkillBridge",
-    desc: "ModeSens-Inspired Fashion E-commerce Platform.",
+    desc: "Cross-Generation – Bridging Ages with Tech.",
     tech: ["React","MongoDb","NodeJs","Express","Firebase","Sockets"],
     live: "https://cross-generation.netlify.app/",
     code: "https://github.com/Ritik-Dethliya/Cross-Generation",
