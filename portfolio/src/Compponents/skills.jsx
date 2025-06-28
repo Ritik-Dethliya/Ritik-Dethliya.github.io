@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGithub } from "react-icons/fa";
-
+import { SiMongodb, SiExpress} from "react-icons/si";
+//import { VscVisualStudioCode } from "react-icons/vsc";
 const skills = [
   { name: "React", icon: <FaReact className="text-cyan-500" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
@@ -8,6 +9,9 @@ const skills = [
   { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
   { name: "JavaScript", icon: <FaJsSquare className="text-yellow-500" /> },
   { name: "GitHub", icon: <FaGithub className="text-black" /> },
+  { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+  { name: "Express", icon: <SiExpress className="text-gray-700" /> },
+  
 ];
 
 const Skills = () => {

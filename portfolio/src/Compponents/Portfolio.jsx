@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { Mail, Github, Linkedin ,Download, Instagram, PhoneCall} from 'lucide-react';
+import GitHubStats from './GitHubStat';
 import Skills from './skills';
+
 import skillshare from '../assets/skillshare.png'
 import caloricounter from '../assets/Caloricounter.png'
 import profileImage from '../assets/ritikprotfolio.jpg'
 import ImageComponent from './Image';
+import SkillBridge from '../assets/SkillBridge.png'
 import Resume from '../assets/RitikDethliyaResume.pdf';
-import GitHubStats from './GitHubStat';
+import Modesen from '../assets/Modesen.png'
 const projects = [
   {
     name: "CaloriSeeker",
@@ -24,8 +27,25 @@ const projects = [
     code: "https://github.com/kourjot/skill-share",
     image:skillshare
   },
+  {
+    name: "Modesen",
+    desc: "ModeSens-Inspired Fashion E-commerce Platform.",
+    tech: ["Html","Css","JavaScript","Firebase"],
+    live: "https://modesensclone12.netlify.app/",
+    code: "https://github.com/saurabhshambharkar/B42_WEB_001_Code-Crafters",
+    image:Modesen
+  },
+  {
+    name: "Cross-Generation SkillBridge",
+    desc: "ModeSens-Inspired Fashion E-commerce Platform.",
+    tech: ["React","MongoDb","NodeJs","Express","Firebase","Sockets"],
+    live: "https://cross-generation.netlify.app/",
+    code: "https://github.com/Ritik-Dethliya/Cross-Generation",
+    image:SkillBridge
+  }
 ];
-
+//https://cross-generation.netlify.app/
+//https://modesensclone12.netlify.app/
 export default function Portfolio() {
   const [project,setProject]=useState(null)
   const handelImage=(projectName)=>{
@@ -91,7 +111,7 @@ export default function Portfolio() {
                 src={proj.image}
                 alt={proj.name}
                 className="w-full h-48 object-contain rounded-lg mb-4"
-                onClick={()=>handelImage(proj.name)}
+                
                 />
               <p className="text-gray-600 mb-2">{proj.desc}</p>
               <p className="text-sm text-gray-500 mb-4">Tech: {proj.tech.join(', ')}</p>
