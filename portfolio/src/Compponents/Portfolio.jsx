@@ -8,8 +8,9 @@ import caloricounter from '../assets/Caloricounter.png'
 import profileImage from '../assets/ritikprotfolio.jpg'
 import ImageComponent from './Image';
 import SkillBridge from '../assets/SkillBridge.png'
-import Resume from '../assets/RitikDethliyaResume.pdf';
+import Resume from '../assets/RitikDethliya-Resume.pdf';
 import Modesen from '../assets/Modesen.png'
+import Navbar from './Navbar';
 const projects = [
   {
     name: "CaloriSeeker",
@@ -55,18 +56,7 @@ export default function Portfolio() {
   return (
     <div className="font-sans bg-gray-50 text-gray-800">
       {project && <ImageComponent project={project}  setProject={setProject}/>}
-      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-          <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <h1 className="text-xl font-bold">MyPortfolio</h1>
-            <ul className="flex space-x-6 font-medium text-gray-700">
-              <li><a href="#hero" className="hover:text-blue-500">Home</a></li>
-              <li><a href="#about" className="hover:text-blue-500">AboutMe</a></li>
-              <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
-              <li><a href="#skills" className="hover:text-blue-500">Skills</a></li>
-              <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
-            </ul>
-          </div>
-      </nav>
+      <Navbar/>
       
       <section id='hero' 
         className="min-h-screen my-15 flex flex-col items-center bg-cover bg-center justify-center text-center bg-white px-6 !background-repeat:no-repeat bg-[url('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?ga=GA1.1.1012260453.1749411147&semt=ais_hybrid&w=740')]"
@@ -80,8 +70,9 @@ export default function Portfolio() {
         <p className="text-xl text-white mb-2">
           Full-Stack Developer | MERN
         </p>
-        <p className="max-w-xl text-white">
-          I turn ideas into interactive web experiences using JavaScript, React, Node & MongoDB.
+        <p className="max-w-xl text-white font-bold">
+          Ritik crafts dynamic web solutions by blending creativity and 
+          code—specializing in JavaScript, React, Node.js, and MongoDB.
         </p>
       </section>
 
@@ -92,7 +83,14 @@ export default function Portfolio() {
           I'm Ritik Dethliya, currently pursuing a Software Development course. I enjoy solving real-world problems and building tools like CaloriSeeker to help people make better health choices. Whether it's crafting smooth UI or building secure APIs — I'm all in!
         </p>
         <div className='my-5'>
-          <a href={Resume} download className="bg-gradient-to-r  from-blue-500 to-indigo-600 text-white  px-6 py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold"
+          <a href={Resume} 
+            target='_blank'
+            onClick={(e)=>{
+              window.open(e.target.href)
+            }             
+            } 
+            download 
+            className="bg-gradient-to-r  from-blue-500 to-indigo-600 text-white  px-6 py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold"
           >
            Resume <Download className='inline'/>
         </a>
